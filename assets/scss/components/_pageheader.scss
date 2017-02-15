@@ -25,6 +25,7 @@ html {
   .logo{
     font-family: 'BrandonGrotesque-Black', sans-serif;
     position: absolute;
+    z-index: 5;
     top: 60px;
     width: 100%;
     color: $blocklevel_white;
@@ -33,11 +34,18 @@ html {
     letter-spacing: 5pt;
     text-align: center;
   }
-  #nav{
+  #menu{
+    a{
+      color: $blocklevel_white;
+    }
+    .active{
+      text-decoration: line-through;
+      color: $blocklevel_white;
+    }
     li{
       list-style: none;
-      padding: 10px;
-      color: $blocklevel_white;
+      width: 150px;
+      padding: 10px 10px 10px 25px;
       text-align: left;
       cursor: pointer;
       opacity: 0.5;
@@ -50,21 +58,20 @@ html {
       opacity: 1;
     }
   }
-  .stage{
+  #fullpage{
     margin: 0 auto;
   }
-  .blocklevelIcon{
-    float: left;
-    width: 358px;
-    height: 212px;
-    background-image: url(../img/blocklevel-icon.png);
-  }
-  .homeContent{
-    float: right;
-    width: 500px;
+
+  .WelcomeContent{
+    width: 800px;
+    margin: 0 auto;
+    min-height: 212px;
+    padding:20px 0 0 400px;
     color: $blocklevel_white;
+    background-image: url(../img/blocklevel-icon.png);
+    background-position: left center;
+    background-repeat: no-repeat;
     text-align: left;
-    padding:15px 0 0 30px;
     h1, h2{
       text-transform: uppercase;
     }
@@ -81,12 +88,93 @@ html {
       padding: 15px 0 0 0;
     }
   }
-
-  .footer{
-    position: absolute;
-    bottom: 15px;
-    left: 10px;
+  .AboutTitle{
+    height: 335px;
+    font-family: 'BrandonGrotesque-Black', sans-serif;
+    font-size: 150pt;
+    color: $darkFont;
+    text-transform: uppercase;
+    line-height: 110pt;
+  }
+  .AboutContent{
+    width: 610px;
+    margin: -300px auto 0 auto;
     color: $blocklevel_white;
+    h1{
+      font-family: 'BrandonGrotesque-Black', sans-serif;
+      text-transform: uppercase;
+      font-size: 32pt;
+    }
+    h2{
+      color: $yellowFont;
+      text-transform: uppercase;
+      font-size: 18pt;
+      line-height: 10pt;
+    }
+    button{
+      background-color: $BaseButtonOrange;
+      border: none;
+      color: $blocklevel_white;
+      padding: 10px 20px;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  }
+  .WorkContent{
+
+    h1{
+      font-family: 'BrandonGrotesque-Black', sans-serif;
+      text-transform: uppercase;
+      font-size: 32pt;
+    }
+  }
+  .copyright{
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    color: $blocklevel_white;
+    font-size: 10pt;
+    text-transform: uppercase;
+  }
+  .social-icons{
+    font-family: 'Lato', sans-serif;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 120px;
+    list-style: none;
+    .fa{
+      color: $blocklevel_white;
+    }
+    .social-icons li {
+      vertical-align: top;
+      display: inline;
+      height: 100px;
+    }
+    .fa-facebook {
+        float: left;
+        padding:10px 14px;
+        transition: 0.5s;
+    }
+    .fa-facebook:hover {
+        background-color: #3d5b99;
+    }
+    .fa-twitter {
+        float: left;
+        padding:10px 12px;
+        transition: 0.5s;
+    }
+    .fa-twitter:hover {
+        background-color: #00aced;
+    }
+    .fa-instagram {
+      float: left;
+      padding:10px 14px;
+      transition: 0.5s;
+    }
+    .fa-instagram:hover {
+        background-color: #e1306c;
+    }
   }
 
 

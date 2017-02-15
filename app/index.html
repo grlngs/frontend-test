@@ -5,8 +5,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLOCKLEVEL | Frontend test</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend molestie porttitor. Donec sit amet nunc odio." />
+
     <!-- build:css css/style.css -->
     <link href="assets/css/global.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
     <!-- endbuild -->
     <!-- build:css css/vendor.css -->
         <!-- bower:css -->
@@ -18,42 +22,72 @@
     <div class="logo">
         Blocklevel
     </div>
-    <ul id="nav">
-        <li><span>01</span> Home</li>
-        <li><span>02</span> About</li>
-        <li><span>03</span> Work</li>
-        <li><span>04</span> Contact</li>
+    <ul id="menu">
+        <li data-menuanchor="Blocklevel" class="active"><a href="#Blocklevel"><span>01</span> Home</a></li>
+    	<li data-menuanchor="About"><a href="#About"><span>02</span> About</a></li>
+    	<li data-menuanchor="Work"><a href="#Work"><span>03</span> Work</a></li>
+    	<li data-menuanchor="Contact"><a href="#Contact"><span>04</span> Contact</a></li>
     </ul>
 
-    <div class="stage">
-        <div class="blocklevelIcon">
-        </div>
-        <div class="homeContent">
-            <h2>Welcome to</h2>
-            <h1>Blocklevel</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend molestie porttitor. Donec sit amet nunc odio. Ut neque metus, semper non semper at, malesuada a nisl.
-            </p>
-        </div>
-    </div>
+    <div id="fullpage">
 
-    <div class="footer">
-        <div class="copyright">
-            © 2016 - All Rights Reserved
-        </div>
-    </div>
+        <div class="section" id="section0">
+            <div class="WelcomeContent">
+                <h2>Welcome to</h2>
+                <h1>Blocklevel</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend molestie porttitor. Donec sit amet nunc odio. Ut neque metus, semper non semper at, malesuada a nisl.
+                </p>
+            </div>
+    	</div>
+
+    	<div class="section" id="section1">
+            <div class="AboutTitle">About <br /> Blocklevel</div>
+            <div class="AboutContent">
+                <h2>Let us tell you more</h2>
+                <h1>About Blocklevel</h1>
+                <p>
+                    Phasellus id rutrum lorem. Nam in erat ex. Nam lacinia arcu non tortor lacinia maximus. Ut lobortis, tellus in laoreet tristique, urna neque cursus dui, eget scelerisque libero massa ac urna. Sed cursus sed massa nec posuere. Etiam nec nibh dictum, tempus diam eget, faucibus ipsum. Mauris auctor elit lacinia nulla auctor elementum.
+                </p>
+                <a href="https://www.blocklevel.nl/" target="_blank"><button class="hvr-radial-out">Read more</button></a>
+            </div>
+    	</div>
+
+    	<div class="section" id="section2">
+    		<div class="intro">
+    			<h1>Work page</h1>
+    			<p>Phasellus id rutrum lorem. Nam in erat ex. Nam lacinia arcu non tortor lacinia maximus. Ut lobortis</p>
+    		</div>
+    	</div>
+
+
+    	<div class="section" id="section3">
+    		<div class="intro">
+    			<h1>Contact page</h1>
+    			<p>Phasellus id rutrum lorem. Nam in erat ex. Nam lacinia arcu non tortor lacinia maximus. Ut lobortis</p>
+    		</div>
+    	</div>
+
 
 </div>
 
+<div class="copyright">
+    © 2016 - All Rights Reserved
+</div>
 
-
-
+<ul class="social-icons">
+    <li><a href="https://www.facebook.com/blocklevel" target="_blank" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://twitter.com/blocklevel" target="_blank" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://www.instagram.com/blocklevel/" target="_blank" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+</ul>
 
     <!-- build:js js/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <script src="../bower_components/what-input/what-input.js"></script>
         <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script src="../vendor/js/jquery.fullPage.min.js"></script>
         <!-- endbower -->
     <!--endbuild -->
 
