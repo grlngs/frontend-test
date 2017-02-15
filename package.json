@@ -1,22 +1,40 @@
 {
-  "name": "frontend-test",
+  "name": "templaterea",
   "version": "1.0.0",
-  "description": "Blocklevel frontend test for templates",
-  "main": "index.js",
+  "description": "template construction",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "wiredep": "^4.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-connect-php": "0.0.8",
+    "gulp-filter": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4",
+    "gulp-useref": "^3.1.2",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "main-bower-files": "^2.13.1",
+    "require-dir": "^0.3.1"
+  },
   "scripts": {
-    "dev": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "test": "gulp"
   },
   "keywords": [
-    "blocklevel"
+    "fixxl",
+    "frontend",
+    "presentation",
+    "gulp"
   ],
-  "author": "Tim Rijkse <tim@blocklevel.nl>",
-  "license": "MIT",
-  "devDependencies": {
-    "css-loader": "^0.25.0",
-    "node-sass": "^3.11.2",
-    "normalize.css": "^5.0.0",
-    "sass-loader": "^4.0.2",
-    "style-loader": "^0.13.1"
-  }
+  "author": "Wouter Geerlings",
+  "license": "ISC"
 }

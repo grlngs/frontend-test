@@ -1,0 +1,27 @@
+{
+  "name": "avalanche-css",
+  "description": "Superclean, powerful, responsive, Sass-based, BEM-syntax CSS grid system",
+  "main": [
+    "_avalanche.scss"
+  ],
+  "keywords": [
+    "css",
+    "grid",
+    "oocss"
+  ],
+  "authors": [
+    "Tom Hare <tom@hare.me>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/colourgarden/avalanche",
+  "version": "1.1.2",
+  "_release": "1.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.1.2",
+    "commit": "7751d5efb348e9b8ec346d3235cefe9c8137f97a"
+  },
+  "_source": "https://github.com/colourgarden/avalanche.git",
+  "_target": "^1.1.2",
+  "_originalSource": "avalanche-css"
+}

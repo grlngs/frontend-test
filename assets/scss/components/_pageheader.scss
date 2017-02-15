@@ -1,0 +1,96 @@
+/* ============================================================================
+   COMPONENTS -- PAGEHEADER
+   ========================================================================= */
+
+* {
+  box-sizing: border-box;
+  font-family: 'BrandonGrotesque-Regular', sans-serif;
+  font-size: 12pt;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color:$BaseBackground;
+  background-image: url(../img/blocklevel-background.png);
+
+  .logo{
+    font-family: 'BrandonGrotesque-Black', sans-serif;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    color: $blocklevel_white;
+    font-size: 14pt;
+    text-transform: uppercase;
+    letter-spacing: 5pt;
+    text-align: center;
+  }
+  #nav{
+    li{
+      list-style: none;
+      padding: 10px;
+      color: $blocklevel_white;
+      text-align: left;
+      cursor: pointer;
+      opacity: 0.5;
+      transition: 0.6s;
+        span{
+          padding: 0 10px 0 0;
+        }
+    }
+    li:hover{
+      opacity: 1;
+    }
+  }
+  .stage{
+    margin: 0 auto;
+  }
+  .blocklevelIcon{
+    float: left;
+    width: 358px;
+    height: 212px;
+    background-image: url(../img/blocklevel-icon.png);
+  }
+  .homeContent{
+    float: right;
+    width: 500px;
+    color: $blocklevel_white;
+    text-align: left;
+    padding:15px 0 0 30px;
+    h1, h2{
+      text-transform: uppercase;
+    }
+    h1{
+      font-family: 'BrandonGrotesque-Black', sans-serif;
+      font-size: 27pt;
+      line-height: 27pt;
+      letter-spacing: 2pt;
+    }
+    h2{
+      border-top: 3px $blocklevel_white solid;
+      width: 130px;
+      font-size: 13pt;
+      padding: 15px 0 0 0;
+    }
+  }
+
+  .footer{
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    color: $blocklevel_white;
+  }
+
+
+  .content {
+    flex: 1;
+  }
+}

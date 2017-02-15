@@ -1,38 +1,93 @@
-# Blocklevel Frontend Test
-> A simple Webpack setup with Sass.
+# Frontend-test Blocklevel
 
-## Before you begin
-Make sure you have [node.js](https://nodejs.org/en/) installed. Probably you already have this since most of modern development tools use NPM. When node.js is installed you can run the following command:
-``` bash
-$ npm install webpack -g
+
+
+# Template build
+
+Setup using:
+
 ```
-This will make the webpack command globally available.
+npm init
+bower init
 
-Install the webpack-dev-server. This enables you to use the webpack-dev-server for any project you want.
-``` bash
-$ npm install webpack-dev-server -g
-```
-
-## Getting it up and running
-Now [Webpack](http://webpack.github.io) is installed you can fork this repository. Check it out and install dependencies:
-``` bash
-$ npm install
+npm install
+bower install
 ```
 
-Now all dependencies are installed you can run a dev server and show us your frontend skills:
-``` bash
-$ webpack-dev-server
+If you do not yet have the `gulp` command, you must run:
+
 ```
-The above command will provide a development server which you can run at [http://localhost:8080](http://localhost:8080).
+npm install gulp-cli -g
+```
 
-## Show your skills
-We've set up a PSD with a simple single page app which can be downloaded [here](http://dev.hoasting.net/_frontend-test/blocklevel-frontend-test.psb). Webfonts can be downloaded [here](http://dev.hoasting.net/_frontend-test/fonts.zip)
+## Available gulp workflows
 
-Keep in mind everything provided in the PSD must be implemented in your test. You are free to add as much awesomeness as you want.
+```
+gulp dev
+```
 
-*Protip: We love the konami code*.
+- Starts a BrowserSync server on port `3000`
+- Runs all dev-tasks once
+- Starts waiting for your changes
 
-## Delivery
-When you are done be sure to commit all your work. Then push it to your forked repository and share the Github url with us. We'll review your code and give you all the digital high fives you deserve.
+```
+gulp dist
+```
 
-Good luck. And have fun! :)
+- Copies all the asset-data to the `dist` folder
+- Compiles the current sass-files to flat css
+- Minifies, uglifies and flattens both css and js files into the `dist` folder
+- Updates the html file in `dist` with links to the newly flatttened files
+
+## Other available gulp commands:
+
+```
+gulp watch
+```
+
+Watches html, scss and js files and responds with dev-tasks when they change
+
+```
+gulp serve
+```
+
+Starts a BrowserSync server on port `3000`
+
+```
+gulp bower
+```
+
+Runs wiredep and links up all bower dependencies into your html files
+
+```
+gulp dev-sass
+
+```
+
+Compiles the current sass-files to sourcemapped css
+
+```
+gulp dev-js
+```
+
+Runs jshint on the current js-files
+
+
+```
+gulp dist-sass
+```
+
+Compiles the current sass-files to flat css
+
+```
+gulp dist-html
+```
+
+- Minifies, uglifies and flattens both css and js files into the `dist` folder
+- Updates the html file in `dist` with links to the newly flatttened files
+
+```
+gulp dist-copy-assets
+```
+
+Copies all the asset-data to the `dist` folder
