@@ -61,7 +61,15 @@ html {
   #fullpage{
     margin: 0 auto;
   }
+  @media screen and (max-width: 800px) {
+    #menu{
+      span{
+        display: none;
+        visibility: hidden;
+      }
 
+    }
+  }
   .WelcomeContent{
     width: 800px;
     margin: 0 auto;
@@ -72,6 +80,7 @@ html {
     background-position: left center;
     background-repeat: no-repeat;
     text-align: left;
+    transition:0.8s;
     h1, h2{
       text-transform: uppercase;
     }
@@ -88,6 +97,20 @@ html {
       padding: 15px 0 0 0;
     }
   }
+  @media screen and (max-width: 985px) {
+    .WelcomeContent{
+      width: 600px;
+      padding:20px 0 0 370px;
+    }
+  }
+  @media screen and (max-width: 813px) {
+      .WelcomeContent{
+        width: 80%;
+        padding:10px 0 0 0px;
+        background-size: 100px;
+        background-position: right top;
+      }
+  }
   .AboutTitle{
     height: 335px;
     font-family: 'BrandonGrotesque-Black', sans-serif;
@@ -95,7 +118,26 @@ html {
     color: $darkFont;
     text-transform: uppercase;
     line-height: 110pt;
+    transition:0.8s;
   }
+    @media screen and (max-width: 1405px) {
+      .AboutTitle{
+        font-size: 110pt;
+        line-height: 90pt;
+      }
+    }
+    @media screen and (max-width: 1005px) {
+      .AboutTitle{
+        font-size: 70pt;
+        line-height: 90pt;
+      }
+    }
+    @media screen and (max-width: 813px) {
+      .AboutTitle{
+        display: none;
+        visibility: hidden;
+      }
+    }
   .AboutContent{
     width: 610px;
     margin: -300px auto 0 auto;
@@ -120,12 +162,152 @@ html {
       cursor: pointer;
     }
   }
+  @media screen and (max-width: 813px) {
+    .AboutContent{
+      width: 80%;
+      margin: 0 auto 0 auto;
+      h1{
+        font-size: 15pt;
+      }
+      h2{
+        font-size: 12pt;
+      }
+    }
+  }
   .WorkContent{
+    color: $blocklevel_white;
+    .slider{
+      height: 450px;
+      background:none;
+      .slideritem{
+        height: 450px;
+        width: 835px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .slideContent{
+          height: 0;
+          width: 100%;
+          padding: 0 180px;
+          background-color: $BaseSliderMagenta;
+          overflow: hidden;
+          transition: 0.8s;
+          h2{
+            text-transform:uppercase;;
+            font-size: 14pt;
+          }
+          button{
+            margin-top: 25px;
+            background: none;
+            border: 1px $blocklevel_white solid;
+            color: $blocklevel_white;
+            padding: 10px 20px;
+            border-radius: 2px;
+            cursor: pointer;
+          }
+          button:hover{
+            background-color: $BaseSliderMagenta;
+          }
+        }
+      }
+      .slideritem:hover > .slideContent{
+        height: 450px;
+        padding: 80px 180px;
+      }
+      @media screen and (max-width: 1610px) {
+        .slideritem:hover > .slideContent{
+          padding:30px;
+        }
+      }
+      @media screen and (max-width: 813px) {
+        .slideritem{
+          margin-top: 140px;
+          height: 200px;
+        }
+        .slideContent{
+          display: none;
+        }
+      }
+    }
+  }
+  .ContactContent{
+    color: $blocklevel_white;
+    .contact_body, label{
+      color: $blocklevel_white;
+    }
+    .input-field, .textarea-field{
+      background: $formfieldBlue;
+      margin: 15px auto;
+      font-family: 'BrandonGrotesque-Regular', sans-serif;
+      border: 1px $blocklevel_white solid;
+      color: $blocklevel_white;
+      font-size: 12pt;
+      width: 350px;
+      height: 50px;
+      padding: 10px;
+    }
+    .textarea-field{
+      resize: none;
+      height: 100px;
+    }
+  }
 
     h1{
       font-family: 'BrandonGrotesque-Black', sans-serif;
       text-transform: uppercase;
       font-size: 32pt;
+    }
+  }
+#submit_btn{
+  background-color: $BaseButtonOrange;
+  border: none;
+  color: $blocklevel_white;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition:0.8s;
+}
+#submit_btn:hover{
+  background-color: $BaseButtonRed;
+}
+  .success{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    margin-left: 250px;
+    margin-top: -150px;
+    background-image: url(../img/blocklevel-background.png);
+    background-color:$BaseBackground;
+    color: #fff;
+    .font{
+      font-family: 'BrandonGrotesque-Black', sans-serif;
+      font-size: 170pt;
+      line-height: 150pt;
+    }
+    .red{
+      color: $BaseButtonRed;
+    }
+    .lightorange{
+      color: $BaseButtonOrange;
+    }
+    .yellow{
+      color: $yellowFont;
+    }
+    .cyaan{
+      color: $cyaanFont;
+    }
+    .lightblue{
+      color: $lightblueFont;
+    }
+    .darkblue{
+      color: $darkblueFont;
+    }
+    .darkorange{
+      color: $darkorangeFont;
+    }
+    .brown{
+      color: $brownFont;
     }
   }
   .copyright{
@@ -177,8 +359,6 @@ html {
     }
   }
 
-
   .content {
     flex: 1;
   }
-}

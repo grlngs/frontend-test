@@ -3,21 +3,21 @@
 ## Work and time
 
 Time span:
+
 12:30 - 14:00 - Setup project and main layout
 
 20:50 - 21:50 - Pageslide Setup
 
 22:15 - 00:00 - Pagebuild and styling Home and About
 
-Total time spanned building so far: 4:15
+10:45 - 12:00 - Pagebuild and styling Work and Contact
 
-Things to do:
-- Build the Work Page;
-- Build the Contact Page;
-- Create mobile version (scale);
-- Test and fine tune script;
-- Dist project and final test run;
-- Time for coffee;
+12:45 - 13:15 - Building mobile version (scale)
+13:15 - 13:30 - Test and fine tune script
+13:30 - 14:15 - Dist run final test and fine tune
+
+Total time spanned building so far: 8:00
+
 
 # Template build
 
