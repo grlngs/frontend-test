@@ -2,7 +2,8 @@
 
 ## Work and time
 
-Time span:
+
+Time:
 
 12:30 - 14:00 - Setup project and main layout
 
@@ -13,10 +14,12 @@ Time span:
 10:45 - 12:00 - Pagebuild and styling Work and Contact
 
 12:45 - 13:15 - Building mobile version (scale)
+
 13:15 - 13:30 - Test and fine tune script
+
 13:30 - 14:15 - Dist run final test and fine tune
 
-Total time spanned building so far: 8:00
+Total time spanned building: 8:00
 
 
 # Template build
